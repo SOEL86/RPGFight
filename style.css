@@ -1,0 +1,149 @@
+#goblin {
+	position: absolute;
+	bottom:0;
+	left:0;
+	z-index:2;
+}
+#walker {
+	position: absolute;
+	bottom:0;
+	right:0;
+	z-index:1;
+}
+button {
+    width:10%;
+	height:80px;
+    left:45%;
+	position:absolute;
+	display:block;
+}
+div {
+	font:verdaa;
+	font-size:60px;
+	color:red;
+}
+body {
+	overflow:hidden;
+	background-color:black;
+}
+.p1_draw {
+	left:100px;
+	top:-150px;
+	position:absolute;
+}
+.p2_draw {
+	right:100px;
+	top:-150px;
+	position:absolute;
+}
+.minicard {
+	width:45px;
+	height:60px;
+	border-radius:4px;
+	color:black;
+	text-align:center;
+	float:left;
+	margin:2px;
+	font-size:20px;
+	background-color:white;
+	background-image:url("redcard.jpg");
+}
+.card {
+	width:110px;
+	height:150px;
+	border-radius:4px;
+	background-color:white;
+	color:black;
+	text-align:center;
+	float:left;
+	margin:2px;
+}
+
+.card p {
+	top: 30%;
+	transform: translateY(-30%);
+}
+
+.hud {
+	width:100%;
+	top:0px;
+	height:80px;
+	background-color:black;
+	text-align: center;
+}
+.p1_damage {
+	position:absolute;
+	left:400px;
+	z-index:3;
+}
+.p2_damage {
+	position:absolute;
+	right:400px;
+	z-index:3;
+}
+.damage {
+	position:absolute;
+	z-index:3;
+}
+.rotateright {
+	transform: rotate(90deg);
+	transform-origin:bottom left;
+	transition-duration:2s;
+}
+.rotateleft {
+	transform: rotate(-90deg);
+	transform-origin:bottom right;
+	transition-duration:2s;
+}
+#p1_hp {
+	position:absolute;
+	left:0;
+	background-color:blue;
+	color:white;
+	height:80px;
+	width:80px;
+}
+#p2_hp {
+	position:absolute;
+	right:0;
+	background-color:red;
+	color:white;
+	height:80px;
+	width:80px;
+}
+#p1_note {
+	position:absolute;
+	left:0px;
+	top:80px;
+	color:blue;
+	height:80px;
+	width:80px;
+	font-size:30px;
+}
+#p2_note {
+	position:absolute;
+	right:0px;
+	top:80px;
+	color:red;
+	height:80px;
+	width:80px;
+	font-size:30px;
+}
+#p1_wins {
+	position:absolute;
+	left:400px;
+	top:0px;
+	color:yellow;
+	height:80px;
+	width:200px;
+	font-size:60px;
+}
+#p2_wins {
+	position:absolute;
+	right:400px;
+	top:0px;
+	color:yellow;
+	height:80px;
+	width:200px;
+	font-size:60px;
+}
