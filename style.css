@@ -11,11 +11,20 @@
 	z-index:1;
 }
 button {
-    width:10%;
-	height:80px;
-    left:45%;
+    width:60px;
+	height:50px;
+    left:50%;
+    transform: translateX(-50%);
 	position:absolute;
 	display:block;
+    border-radius: 3px;
+    background-color: #00b100;
+    color: white;
+    font-weight: bold;
+    border-bottom-color: #009800;
+    border-right-color: #009800;
+    border-top-color: #00be00;
+    border-left-color: #00be00;
 }
 div {
 	font:verdaa;
@@ -131,8 +140,8 @@ body {
 }
 #p1_wins {
 	position:absolute;
-	left:400px;
-	top:0px;
+	left:50%;
+	bottom:50%;
 	color:yellow;
 	height:80px;
 	width:200px;
@@ -140,8 +149,8 @@ body {
 }
 #p2_wins {
 	position:absolute;
-	right:400px;
-	top:0px;
+	right:50%;
+	bottom:50%;
 	color:yellow;
 	height:80px;
 	width:200px;

@@ -32,8 +32,8 @@ $(document).ready(function(){
 		player1.name.css({"left":"0","bottom":"0"});
 		player2.name.css({"right":"0","bottom":"0"});
 		//charge forwards
-		player1.name.animate({left:"+=400px"}, 400);
-		player2.name.animate({right:"+=400px"}, 400);
+		player1.name.animate({left:"+=200px"}, 200);
+		player2.name.animate({right:"+=200px"}, 200);
 		//shuffle deck
 		shuffle(cards);
 		//split deck and place in players hand
@@ -54,6 +54,7 @@ $(document).ready(function(){
 		var t = 0;
 		//create SFX
 		var jab = new Audio("Jab.wav");
+		jab.volume = 0.1;
 		//set attack speed
 		var game = setInterval(function(){
 		//play attack sound
@@ -149,6 +150,7 @@ function turn(t,player1,player2){
 function endgame(player1,player2){
 	//create death sound
 	var audio = new Audio("Slap.wav");
+	audio.volume = 0.1;
 	//player 1 has died
 	if(player1.hp < 1 && player2.hp > 0){
 		//play death sound
